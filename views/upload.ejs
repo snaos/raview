@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+        <h1>Hello</h1>
+		<form action="/reviews/write" method="post" enctype="multipart/form-data">
+
+			리뷰 주제<br>
+			review_subject : <input type="text" name="review_subject"><br>
+
+			리뷰 내용<br>
+			review_content : <input type="text" name="review_content" size=40><br>
+
+			category_num : <input type="text" name="category_num"><br>
+			#	category list---
+			1	Appliances---
+			2	Art & Design---
+			3	Babies & Kids--
+			4	Beauty & Hair---
+			5	Books---
+			6	Business---
+			7	Cameras & Videos---
+			8	Cars & Motorcycles---
+			9	Celebrities---
+			10	Cell Phones & Accessories---
+			11	Comics & Animation---
+			12	Computers & Tablets---
+			13	Electronics------
+			14	Entertainment---
+			15	Fashion for Men---
+			16	Fashion for Women---
+			17	Food & Drink---
+			18	Games & Toys---
+			19	Health & Fitness---
+			20	Home & Living---
+			21	Jewelry---
+			22	Local---
+			23	Marketing---
+			24	Movies & TV---
+			25	Music & Instruments---
+			26	Pets---
+			27	Restaurants & Bars---
+			28	Shoes---
+			29	Sports & Outdoors---
+			30	Tech & Gadgets---
+			31	Travel---
+			32	Watches---
+			33	Others---
+	<br><br>
+			review_score : <input type="text" name="review_score"><br>
+			1~10점까지 정수
+			<br>
+			review_tag : <input type="text" name="review_tag"><br>
+			tag의 형태 => #태그#태그이름#태그태그 - 이런식으로 #을 붙인 후 붙일 태그를 입력한다. #하나당 태그 하나
+			<br>
+			파일1 : <input type="file" name="review_image_path"><br>
+			파일2 : <input type="file" name="review_image_path"><br>
+			파일3 : <input type="file" name="review_image_path"><br>
+			파일4 : <input type="file" name="review_image_path"><br>
+			파일5 : <input type="file" name="review_image_path"><br>
+			파일6 : <input type="file" name="review_image_path"><br>
+			파일7 : <input type="file" name="review_image_path"><br>
+			파일8 : <input type="file" name="review_image_path"><br>
+			파일9 : <input type="file" name="review_image_path"><br>
+			파일10 : <input type="file" name="review_image_path"><br>
+
+			<input type="submit" value="업로드">
+
+		</form>
+  </body>
+</html>

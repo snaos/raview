@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>프로필 save 테스트</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<form action="/user/edit/profile" method="post" enctype="multipart/form-data">
+    first_name : <input type="text" name="profile_first_name" value="사원" size="10"><br>
+    last+name : <input type="text" name="profile_last_name" value="홍길동" size="10"><br>
+    intro : <input type="text" name="profile_introduction" value="홍길동" size="10"><br>
+    url : <input type="text" name="profile_url" value="홍길동" size="10"><br>
+    user_num : <input type="text" name="user_num" value="홍길동" size="10"><br>
+    image : <input type="file" name="profile_image_path"><br>
+    <input type="submit" value="업로드">
+</form>
+</body>
+</html>
